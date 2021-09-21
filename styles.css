@@ -1,0 +1,114 @@
+body {
+    
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+h1,
+h2,
+h4 {
+    color: #386093;
+    margin-bottom: 2px;
+}
+
+hr {
+    margin-top: .1px;
+}
+
+span {
+    font-weight: normal;
+    color: black;
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    width: 30%;
+    padding-right: 30px; 
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+#box1 {
+    height: 50px;
+    background-color: #376193;
+    padding: 0;
+}
+
+#inner {
+    padding-left: 20px;
+}
+
+.right {
+    width: 70%;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.skills {
+    display: flex;
+}
+
+.below {
+    margin-top: 90px;
+    bottom: 0;
+    
+}
+
+.email:hover {
+    font-size: 1.3em;
+    color: blue;
+    
+    
+    
+}
+
+
+
+@media screen and (min-width: 950px) {
+    body {
+        font-size: 1.5em;
+        margin-right: -50%;
+    }
+
+    img {
+        width: 250px;
+    }
+    
+}
+@media only screen and (max-width: 650px){
+    .skills {
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .email {
+        font-size: .6em;
+}
+
+@media only screen and (max-width: 440px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+}
